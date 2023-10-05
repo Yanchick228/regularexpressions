@@ -9,8 +9,8 @@
 <script>
 function check(){
 let val = document.getElementById('val').value;
-let ipv4 = /^(25[0-5]\.|2[0-4]\d\.|1\d\d\.|[1-9]\d\.|\d\.){3}(25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)$/;
-let ipv6 = /^([0-9a-f]{4}:){7}[0-9a-f]{4}$/i;
+let ipv4 = /(25[0-5]\.|2[0-4]\d\.|1\d\d\.|[1-9]\d\.|\d\.){3}(25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)/;
+let ipv6 = /([0-9a-f]{4}:){7}[0-9a-f]{4}/i;
 let paragr = document.getElementsByTagName('p')[0];
 
 if (ipv4.test(val)){
